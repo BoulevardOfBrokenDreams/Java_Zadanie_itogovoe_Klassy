@@ -9,6 +9,8 @@ public class Runner {
         arr[0] = new Trip("Tony Shumsky", 1625, 5);
         arr[1] = new Trip("Evgeny Plyago", 150, 10);
         arr[2] = null;
+        //если не присваивать значение null, оно само туда и заносится, проверил.
+        //потом с помощью toString() выводится null
         arr[3] = new Trip("Vladislav Parhutich", 2500, 20);
         arr[4] = new Trip("Evgeny Plyago", 270, 13);
         arr[5] = new Trip("Vladislav Gromyko", 3434, 23);
@@ -21,7 +23,6 @@ public class Runner {
         for(int i = 0; i < arr.length; i++){
             if(arr[i] != null){
                 arr[i].show();
-                System.out.println();
             }
         }
 
@@ -60,6 +61,9 @@ public class Runner {
 
         //7
         System.out.println("Среднее общих расходов = " + avgExpenses(arr));
+
+
+        System.out.printf("args = %.2f  %.2f", 0.0, 0.5); //Попробовал :)
     }
 
     public static String sum1(String name, Trip[] arr){
