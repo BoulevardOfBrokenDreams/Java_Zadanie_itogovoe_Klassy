@@ -2,7 +2,7 @@ package by.gsu.lab;
 
 
 public class Trip {
-    public static int bid = 0;
+    public static int bid = 600;
     private String account;
     private int fare;
     private int buisnesDays;
